@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44"
+        />
+
+
+<!--   VERTICAL GUIDE START -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+<!--    HORIZONTAL GUIDE END-->
+
+<!--    ROW TOP START-->
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="AC"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toLeftOf="@id/ve1"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="CE"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve2"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="√"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve3"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="%"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve4"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="MR"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="27sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve5"
+        />
+<!--    ROW TOP END-->
+</androidx.constraintlayout.widget.ConstraintLayout>

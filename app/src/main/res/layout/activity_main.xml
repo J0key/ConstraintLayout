@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/basic"
+        layout="@layout/title"
+        />
+
+<!--INPUT START-->
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="500 x 120"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/output"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="@id/ver5"
+        android:fontFamily="@font/poppins_regular"/>
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="600.000"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/line"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="@id/ver5"
+        android:textStyle="bold"/>
+<!--    INPUT END-->
+
+<!--    LINE START -->
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="298dp"
+        app:layout_constraintTop_toTopOf="@id/basic"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="2sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/pink"
+        android:textStyle="bold"/>
+<!--    LINE END-->
+
+<!--    VERTICAL GUIDE START-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+<!--    VERTICAL GUIDE END-->
+
+<!--    HORIZONTAL GUIDE START-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"
+        />
+<!--    HORIZONTAL GUIDE END-->
+
+    <!--    ROW TOP START-->
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="AC"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toLeftOf="@id/ve1"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="CE"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve2"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="√"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve3"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="%"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve4"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="MR"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="27sp"
+        app:layout_constraintTop_toBottomOf="@id/top1"
+        app:layout_constraintLeft_toRightOf="@id/ve5"
+        />
+    <!--    ROW TOP END-->
+
+<!--    ROW 1 START-->
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="7"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:textColor="@color/angka"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="4"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/angka"
+        android:background="@drawable/circle"
+        android:text="1"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/angka"
+        android:background="@drawable/circle"
+        android:text="0"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintStart_toEndOf="@id/ver1"
+        />
+<!--ROW 1 END-->
+
+<!--    ROW 2 START-->
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="8"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="5"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="2"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+
+<!-- ROW 2 END-->
+
+    <!--    ROW 3 START-->
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="9"
+        android:gravity="center_horizontal"
+        android:textColor="@color/angka"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="6"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="3"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:textColor="@color/angka"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="x"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:textColor="@color/angka"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+    <!-- ROW 3 END-->
+
+    <!--    ROW 4 START-->
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="+"
+        android:gravity="center_horizontal"
+        android:textColor="@color/angka"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="-"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="/"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle"
+        android:text="="
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+    <!-- ROW 4 END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

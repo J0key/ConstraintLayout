@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/rectangle"
+
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="125dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="Calc"
+            android:elevation="4dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:alpha="0.8"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="ulator App"
+            android:elevation="4dp"
+            android:layout_marginLeft="79dp"
+            android:textColor="@color/cream"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:text=""
+            android:elevation="2dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginRight="53dp"
+            android:background="@color/pink"
+            android:textSize="3sp"
+            android:gravity="center_horizontal"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
